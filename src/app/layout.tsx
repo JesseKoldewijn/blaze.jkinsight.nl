@@ -3,6 +3,7 @@ import "@/styles/tailwind.css";
 import appleTouch from "@/meta/apple-touch-icon.png";
 import fav32 from "@/meta/favicon-32x32.png";
 import fav16 from "@/meta/favicon-16x16.png";
+import PageLoader from "@/components/pageLoader";
 
 export const metadata = {
   title: {
@@ -23,7 +24,10 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <link rel="icon" type="image/ico" href="/favicon.ico" />
         <link rel="manifest" href="/site.webmanifest"></link>
       </head>
-      <body>{children}</body>
+      <body>
+        <PageLoader />
+        {children}
+      </body>
     </html>
   );
 };

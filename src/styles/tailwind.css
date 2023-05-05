@@ -11,5 +11,9 @@ html {
 }
 
 body {
-  @apply bg-gradient-to-b from-base-100 to-stone-500;
+  @apply bg-defaultBlaze;
+}
+
+.bg-defaultBlaze {
+  @apply bg-gradient-to-b from-base-100 to-stone-500 transition-all duration-300 ease-in-out;
 }

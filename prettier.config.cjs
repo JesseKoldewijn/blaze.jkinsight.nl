@@ -5,9 +5,8 @@ const config = {
   printWidth: 80,
   singleQuote: false,
   jsxSingleQuote: false,
-  semi: true,
-  trailingComma: "all",
-  tabWidth: 2,
+  semi: false,
+  trailingComma: "es5",
+  tabWidth: 2
 };
-
 module.exports = config;
